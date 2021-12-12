@@ -29,8 +29,6 @@ function DetailPage() {
       });
   }, [params.id]);
 
-  console.log(contentBodyData);
-
   useEffect(() => {
     fetch('/Data/comment.json')
       .then(res => res.json())

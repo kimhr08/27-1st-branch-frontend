@@ -9,6 +9,7 @@
   width: 100vw;
   z-index: 999;
   background-color: white;
+
   .navLeft {
     display: flex;
     align-items: center;
@@ -23,6 +24,7 @@
       font-style: italic;
       font-size: 16px;
       text-decoration: underline;
+      color: $color-black;
     }
   }
 

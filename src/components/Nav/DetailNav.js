@@ -1,4 +1,5 @@
 import { useState } from 'react';
+import { Link } from 'react-router-dom';
 import Hamburger from './Hamburger';
 import ScrollIndicator from './ScrollIndicator/Indicator';
 import './DetailNav.scss';
@@ -11,7 +12,7 @@ function DetailNav({ setIsCommentOpen }) {
   };
 
   const goToComment = () => {
-    window.location.href = '#section2';
+    window.location.href = '#section2 ';
     setIsCommentOpen(true);
   };
 
@@ -25,7 +26,9 @@ function DetailNav({ setIsCommentOpen }) {
             src="/images/Nav/iconmonstr-menu-thin.svg"
             alt="더보기"
           />
-          <span className="logo">Branch</span>
+          <Link to="/">
+            <span className="logo">Branch</span>
+          </Link>
         </div>
         <div className="navRight">
           <img

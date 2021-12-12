@@ -2,7 +2,6 @@ import { Link } from 'react-router-dom';
 import './ListRelatedArticle.scss';
 
 function ListRelatedArticle({ relatedData }) {
-  console.log(relatedData);
   return (
     <ul className="listRelatedArticle">
       {relatedData.result?.map((data, idx) => {
